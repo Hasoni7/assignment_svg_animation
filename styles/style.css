@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(228, 214, 252);
+}
+
+.card {
+  border: solid black;
+  background: rgb(241, 125, 226);
+  padding: 25px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.btn {
+  background-color: rgb(26, 170, 26);
+  color: white;
+  margin-top: 25px;
+  padding: 10px 50px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--clr);
+  letter-spacing: 0.2em;
+  box-shadow: 0 0 35px var(--clr);
+}
+
+@keyframes imgZoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animate__heartBeat {
+  animation: heartBeat 2s infinite;
+}
+
+.ballons {
+  animation: imgZoom 2s infinite;
+}
